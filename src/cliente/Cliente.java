@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication6proyecto;
+package cliente;
 
 /**
  *
  * @author Admin
  */
-public class JavaApplication6Proyecto {
+public class Cliente {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new validarUsuario().setVisible(true);
+        new ControladorCliente();
     }
     
 }
