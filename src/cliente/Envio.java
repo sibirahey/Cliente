@@ -16,6 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import utils.Compra;
+import utils.Constantes;
 import utils.Usuario;
 
 /**
@@ -29,7 +30,7 @@ public class Envio {
             Socket socket = new Socket("localhost", 6000);
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            out.println("autenticar");
+            out.println(Constantes.AUTENTICAR);
             String inputLine;
             if ((inputLine = in.readLine()) != null && inputLine.equals("OK")) {
                 ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
