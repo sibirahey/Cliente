@@ -7,6 +7,7 @@ package cliente;
 
 import javax.swing.JButton;
 import javax.swing.JList;
+import utils.Productos;
 
 /**
  *
